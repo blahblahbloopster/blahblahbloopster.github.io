@@ -20,7 +20,36 @@
       <div class="container">
         <div class="row">
             <!-- <div class="column" style="width: 20px;"></div> -->
-            <div class="col-8">
+
+            <div id="main_col" class="col-8">
+              <script>
+                function findBootstrapEnvironment() {
+                  let envs = ['xs', 'sm', 'md', 'lg', 'xl'];
+  
+                  let el = document.createElement('div');
+                  document.body.appendChild(el);
+  
+                  let curEnv = envs.shift();
+  
+                  for (let env of envs.reverse()) {
+                      el.classList.add(`d-${env}-none`);
+  
+                      if (window.getComputedStyle(el).display === 'none') {
+                          curEnv = env;
+                          break;
+                      }
+                  }
+  
+                  document.body.removeChild(el);
+                  return curEnv;
+              }
+              var env = findBootstrapEnvironment()
+              if (env == "xs" || env=="sm" || env == "lg") {
+                var element = document.getElementById("main_col")
+                element.className = "col"
+              }
+              </script>
+              
                 <script>
                     alert("Welcome to The  Food Company! \n \
 We're glad you are here. \n\
