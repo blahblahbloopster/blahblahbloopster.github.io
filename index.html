@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <meta charset="utf-8">
@@ -40,36 +40,29 @@
           </ul>
         </div>
       </nav>
-
-          <h1>The Food Company</h1>
-          <h3>Popular pages</h3>
-          <div>
-            <div class="row">
-              <div class="col-sm-1">
-                </div>
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="/resources/chicken.png" alt="Chicken Cake">
-                  <div class="card-body">
-                    <h5 class="card-title">Chicken Cake</h5>
-                    <p class="card-text">A delicously sweet twist on the classic chicken.</p>
-                    <a href="/chicken_cake.html" class="btn btn-primary">Recipe</a>
-                  </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="https://www.nps.gov/piro/learn/nature/images/DeepForest_1.JPG" alt="Weekend">
-                  <div class="card-body">
-                    <h5 class="card-title">Weekend</h5>
-                    <p class="card-text">A PR disaster</p>
-                    <br>
-                    <a href="/weekend.html" class="btn btn-primary">Story</a>
-                  </div>
-    
-                </div>
+      <h1 style="text-align: center;">The Food Company</h1>
+      <h3 style="text-align: center;">Popular pages</h3>
+      <div class="container">
+        <div class="card-deck">
+            <div class="card mb-4">
+              <img class="card-img-top" src="/resources/chicken.png" alt="Chicken Cake">
+              <div class="card-body">
+                <h5 class="card-title">Chicken Cake</h5>
+                <p class="card-text">A delicously sweet twist on the classic chicken.</p>
+                <a href="/chicken_cake.html" class="btn btn-primary">Recipe</a>
               </div>
             </div>
-            </div>
+            <div class="card mb-4">
+              <img class="card-img-top" src="https://www.nps.gov/piro/learn/nature/images/DeepForest_1.JPG" alt="Weekend">
+              <div class="card-body">
+                <h5 class="card-title">Weekend</h5>
+                <p class="card-text">A PR disaster</p>
+                <br>
+                <a href="/weekend.html" class="btn btn-primary">Story</a>
+              </div>
 
-          </div>
+            </div>
+        </div>
+      </div>
     </body>
 </html>
