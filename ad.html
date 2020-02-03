@@ -4,7 +4,7 @@
 <body id="image">
     <style>
     body {
-        background-image:url('/resources/ad1.gif')
+        background-image:url('https://66.media.tumblr.com/b4f27ab8a744c90af4566cb2e714d225/tumblr_nxod1rSv961qzt4vjo1_540.gif')
     }
     </style>
     
@@ -18,13 +18,13 @@
         var rand = Math.random()
         var element = document.getElementById("image")
         if (rand < 0.3) {
-            element.style.backgroundImage = "url('/resources/ad2.gif')"
+            element.style.backgroundImage = "url('https://media1.giphy.com/media/SYrMAmJZT4YcU/giphy.gif')"
             document.getElementById("ad1").style.visibility = "visible"
 
         } else if (rand < 0.6) {
             element.style.backgroundImage = "url('/resources/angry_chicken.png')"
         } else if (rand >= 0.6) {
-            // element.style.backgroundImage = "url('https://66.media.tumblr.com/b4f27ab8a744c90af4566cb2e714d225/tumblr_nxod1rSv961qzt4vjo1_540.gif')"
+            element.style.backgroundImage = "url('https://66.media.tumblr.com/b4f27ab8a744c90af4566cb2e714d225/tumblr_nxod1rSv961qzt4vjo1_540.gif')"
             document.getElementById("ad1").style.visibility = "visible"
         }
         element.style.backgroundSize = "300px 150px"
