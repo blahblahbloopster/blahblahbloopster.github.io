@@ -7,14 +7,30 @@
         background-image:url('https://66.media.tumblr.com/b4f27ab8a744c90af4566cb2e714d225/tumblr_nxod1rSv961qzt4vjo1_540.gif')
     }
     </style>
+    
+    <template>
+        Your ad here!!!!! <br>
+        Email 129048@1337.onion <br>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Click here for quote</a>
+    </template>
+
     <script>
-        if (Math.random() > 0.5) {
-            var element = document.getElementById("image")
+        var rand = Math.random()
+        var element = document.getElementById("image")
+        if (rand < 0.3) {
             element.style.backgroundImage = "url('https://media1.giphy.com/media/SYrMAmJZT4YcU/giphy.gif')"
+            var temp = document.getElementsByTagName("template")[0];
+            var clon = temp.content.cloneNode(true);
+            document.body.appendChild(clon);
+
+        } else if (rand < 0.6) {
+            element.style.backgroundImage = "url('/resources/angry_chicken.png')"
+        } else if (rand >= 0.6) {
+            element.style.backgroundImage = "url('https://66.media.tumblr.com/b4f27ab8a744c90af4566cb2e714d225/tumblr_nxod1rSv961qzt4vjo1_540.gif')"
+            var temp = document.getElementsByTagName("template")[0];
+            var clon = temp.content.cloneNode(true);
+            document.body.appendChild(clon);
         }
+        element.style.backgroundSize = "300px 150px"
     </script>
-        
-    Your ad here!!!!! <br>
-    Email 129048@1337.onion <br>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Click here for quote</a>
 </body>
