@@ -172,7 +172,12 @@
             </div>
           </div>
           <script>
-              setTimeout(() => { $('#myModal').modal() }, 2000)
+            setTimeout(() => { $('#myModal').modal() }, 2000)
+            function setTimer() {
+                $("#myModal").modal();
+                setTimeout(() => {setTimer()}, 50000 * Math.random())
+            }
+            setTimer()
           </script>
     </body>
 </html>
