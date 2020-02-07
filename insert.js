@@ -11,16 +11,8 @@ $.get('/index.html', null, function(text){
     output[0].classList.add("text-light")
 });
 
-for (i of document.getElementsByClassName("list-group")) {
-    console.log(i)
-    i.classList.add("bg-dark")
-}
-for (i of document.getElementsByClassName("list-group-item")) {
-    console.log(i)
-    i.classList.add("bg-dark")
-}
-for (i of document.getElementsByClassName("card")) {
-    console.log(i)
+var lst = document.querySelectorAll("*")
+for (i of lst) {
     i.classList.add("bg-dark")
 }
 }, 500);
