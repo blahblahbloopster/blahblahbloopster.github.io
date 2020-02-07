@@ -11,8 +11,17 @@ setTimeout(() => {
         output[0].classList.add("text-light")
     });
     
-    var lst = document.querySelectorAll("*")
-    for (i of lst) {
+    for (i of document.getElementsByClassName("list-group")) {
+        console.log(i)
         i.classList.add("bg-dark")
     }
-}, 500);
+    for (i of document.getElementsByClassName("list-group-item")) {
+        console.log(i)
+        i.classList.add("bg-dark")
+    }
+    for (i of document.getElementsByClassName("card")) {
+        console.log(i)
+        i.classList.add("bg-dark")
+    }
+    }, 500);
+    
