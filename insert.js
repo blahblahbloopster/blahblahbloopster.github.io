@@ -2,7 +2,8 @@ setTimeout(() => {
     if (document.location.pathname != "/index.html" & document.location.pathname != "/") {
         $.get('/index.html', null, function(text){
             var output = document.getElementById("navbar_box");
-            element = $(text)[21]
+            // console.log($(text))
+            element = $(text)[23]
             output.appendChild(element);
         });
     }
