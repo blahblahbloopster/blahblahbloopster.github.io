@@ -7,20 +7,20 @@ setTimeout(() => {
         });
     }
     
-    $.get('/index.html', null, function(text){
-        var output = document.getElementsByTagName("body");
-        output[0].classList.add("bg-dark")
-        output[0].classList.add("text-light")
-    });
+    // $.get('/index.html', null, function(text){
+    //     var output = document.getElementsByTagName("body");
+    //     output[0].classList.add("bg-dark")
+    //     output[0].classList.add("text-light")
+    // });
     
-    for (i of document.getElementsByClassName("list-group")) {
-        i.classList.add("bg-dark")
-    }
-    for (i of document.getElementsByClassName("list-group-item")) {
-        i.classList.add("bg-dark")
-    }
-    for (i of document.getElementsByClassName("card")) {
-        i.classList.add("bg-dark")
-    }
+    // for (i of document.getElementsByClassName("list-group")) {
+    //     i.classList.add("bg-dark")
+    // }
+    // for (i of document.getElementsByClassName("list-group-item")) {
+    //     i.classList.add("bg-dark")
+    // }
+    // for (i of document.getElementsByClassName("card")) {
+    //     i.classList.add("bg-dark")
+    // }
     }, 500);
     

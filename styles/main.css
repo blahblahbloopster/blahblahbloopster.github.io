@@ -1,3 +1,15 @@
+:root {
+    --main-background-color: #404040;
+    --text-color: white;
+}
+
 body {
-    background-color: darkslategray;
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+}
+
+.card {
+    background-color: var(--main-background-color);
+    border-color: var(--text-color);
+    color: var(--text-color);
 }
