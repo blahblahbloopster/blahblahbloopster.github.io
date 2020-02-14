@@ -23,5 +23,4 @@ setTimeout(() => {
     // for (i of document.getElementsByClassName("card")) {
     //     i.classList.add("bg-dark")
     // }
-    }, 500);
-    
+}, 500);

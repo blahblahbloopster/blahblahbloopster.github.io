@@ -36,6 +36,16 @@ body {
     color: var(--text-color);
 }
 
+.modal-dialog {
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+}
+
+.modal-content {
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+}
+
 .float-bottom {
     position: absolute;
     bottom: 0;
