@@ -1,0 +1,74 @@
+/* Max */
+
+:root {
+    --main-background-color: #404040;
+    --text-color: white;
+}
+
+body {
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+    perspective: 1000px;
+}
+
+.card {
+    background-color: var(--main-background-color);
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+.list-group {
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+}
+
+.list-group-item {
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+
+.dropdown-item {
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+}
+
+.dropdown-menu {
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+}
+
+.modal-dialog {
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+}
+
+.modal-content {
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+}
+
+.float-bottom {
+    position: absolute;
+    bottom: 0;
+    margin: 10px
+}
+
+#spinner {
+    text-align: center;
+    animation-name: spin, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+  }
+  @keyframes spin {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(-360deg); }
+  }
+  @keyframes depth {
+    0% { text-shadow: 0 0 black; }
+    25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
+    50% { text-shadow: 0 0 black; }
+    75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
+    100% { text-shadow: 0 0 black; }
+}
