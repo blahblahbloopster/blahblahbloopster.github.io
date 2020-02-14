@@ -1,3 +1,5 @@
+// Max
+
 setTimeout(() => {
     if (document.location.pathname != "/index.html" & document.location.pathname != "/") {
         $.get('/index.html', null, function(text){
