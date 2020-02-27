@@ -1,6 +1,5 @@
 // Max
 
-setTimeout(() => {
     if (document.location.pathname != "/index.html" & document.location.pathname != "/") {
         $.get('/index.html', null, function(text){
             var output = document.getElementById("navbar_box");
@@ -25,4 +24,4 @@ setTimeout(() => {
     // for (i of document.getElementsByClassName("card")) {
     //     i.classList.add("bg-dark")
     // }
-}, 500);
+// }, 500);

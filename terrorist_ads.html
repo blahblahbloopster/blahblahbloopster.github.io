@@ -2,11 +2,11 @@
 
 
 <body id="image">
-    <style>
+    <!-- <style>
     body {
         background-image:url('/resources/gudjobarabianrevised.jpeg')
     }
-    </style>
+    </style> -->
     
     <p id="ad1" style="visibility: hidden;">
         Join lSlS or Associated Organizations today! <br>
@@ -20,15 +20,20 @@
         Best falafel you find in any tribe!!! <br>
         <a href="example.com" target="_blank">official Good Harim's Falafel Website</a>
     </p>
-    <script>
+
+<script>
         var rand = Math.random()
         var element = document.getElementById("image")
-        if (rand < 0.3) {
+        if (rand < 0.5) {
+            var element2 = document.getElementById("ad2");
+            element2.parentNode.removeChild(element2);
             element.style.backgroundImage = "url('/resources/gudjobarabianrevised.jpeg')"
             document.getElementById("ad1").style.visibility = "visible"
 
 
-        } else if (rand >= 0.6) {
+        } else if (rand >= 0.5) {
+            var element2 = document.getElementById("ad1");
+            element2.parentNode.removeChild(element2);
             element.style.backgroundImage = "url('/resources/gudjobarabianrevised.jpeg')"
             document.getElementById("ad2").style.visibility = "visible"
         }
