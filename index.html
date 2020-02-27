@@ -41,8 +41,22 @@
           </ul>
         </div>
       </nav>
-      <h1 style="text-align: center;">The Food Company</h1>
+      <h1 style="text-align: center;" id="bar">The Food Company</h1>
+      
+      <div class="spinner2">
+        <marquee>
+          <div id="spinner">
+            <div id="foo"></div>
+          </div>
+        </marquee>
+      </div>
+      
       <h3 style="text-align: center;">Popular pages</h3>
+      <script>
+        function spin() {
+          document.getElementById("foo").appendChild(document.getElementById("bar"));
+        }
+      </script>
       <div class="container">
         <div class="card-deck">
             <div class="card mb-4">
@@ -93,5 +107,6 @@
             </div>
         </div>
       </div>
+      <p onclick="spin()"> :) </p>
     </body>
 </html>

@@ -54,6 +54,22 @@ body {
     margin: 10px
 }
 
+.spinner2 {
+    text-align: center;
+    animation-name: spin2;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+.marquee {
+    text-align: center;
+    animation-name: glide;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
 #spinner {
     text-align: center;
     animation-name: spin, depth;
@@ -64,6 +80,15 @@ body {
   @keyframes spin {
     from { transform: rotateY(0deg); }
     to { transform: rotateY(-360deg); }
+  }
+  @keyframes spin2 {
+    from { transform: rotateZ(0deg); }
+    to { transform: rotateZ(360deg); }
+  }
+  @keyframes glide {
+    0% { transform: translate(100px); }
+    50% { transform: translate(-100px); }
+    100% { transform: translate(100px); }
   }
   @keyframes depth {
     0% { text-shadow: 0 0 black; }
